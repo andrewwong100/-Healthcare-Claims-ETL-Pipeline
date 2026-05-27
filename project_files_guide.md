@@ -181,23 +181,3 @@ CI pipeline. Should run on every PR:
 ```
 
 ---
-
-## Files to NOT include
-
-- `.env` — use `.env.example` instead (never commit secrets)
-- `*.csv` or raw CMS data files — these are too large; link to CMS.gov instead
-- Compiled `__pycache__` folders — add to `.gitignore`
-- Redshift credentials — reference Airflow connections or AWS Secrets Manager
-
----
-
-## Minimum Viable Repo for a Job Application
-
-If you're short on time, prioritize this order:
-
-1. `README.md` — architecture diagram + quickstart
-2. `dbt/models/` — all three layers (staging, intermediate, marts)
-3. `ingestion/cms_api_client.py` — shows Python + API skills
-4. `dbt/tests/` — shows data quality mindset
-5. `notebooks/eda_claims_exploration.ipynb` — shows analytical thinking
-6. `docs/data_dictionary.md` — shows documentation discipline (key for PocketHealth)
